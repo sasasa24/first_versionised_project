@@ -1,0 +1,94 @@
+/* Universal Selector */
+* {
+    margin: 0; /* Resetting outer spacing */
+    padding: 0; /* Resetting inner spacing */
+}
+
+.body{
+    background: #D7E4C0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    grid-template-rows: repeat (12, 1fr);
+}
+
+.navbar {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    background-color: blueviolet;
+}
+
+.footer {
+grid-column: 1 / span 12;
+grid-row: 12 / span 1;
+background-color: blueviolet;
+}
+
+.leftsidebar {
+    background-color: blanchedalmond;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.rightsidebar {
+    background-color: blanchedalmond;
+    grid-column: 12 / span 1;
+    grid-row: 2 / span 10;
+}
+
+.content {
+    background-color: lightblue;
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 10 ;
+}
+
+/* **************************** */
+/* ****** styling the navbar **** */ 
+/* ****************************** */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    Color: plum;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* **************************** */
+/* ****** styling the footer **** */
+/* ****************************** */
+.footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        Color: plum;
+        font-size: 17px;
+}
+
+/* **************************** */
+/* ****** styling the content **** */
+/* ****************************** */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.profile{
+max-width: 600px;
+}
+
+.developer-photo {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
